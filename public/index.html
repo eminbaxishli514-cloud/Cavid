@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0f19" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preload" as="image" href="/Cavid.jpeg" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="topbar">
+        <div class="badge" aria-hidden="true">Birthday Bash</div>
+        <nav class="tabbar" role="tablist" aria-label="Birthday sections">
+          <button
+            type="button"
+            class="tabBtn active"
+            data-tab="animation"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-animation"
+          >
+            Animation
+          </button>
+          <button
+            type="button"
+            class="tabBtn"
+            data-tab="wishes"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-wishes"
+          >
+            Wishes
+          </button>
+          <button
+            type="button"
+            class="tabBtn"
+            data-tab="memories"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-memories"
+          >
+            Memories
+          </button>
+          <button
+            type="button"
+            class="tabBtn"
+            data-tab="surprise"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-surprise"
+          >
+            Surprise
+          </button>
+        </nav>
+        <button id="replayBtn" class="replay" type="button">Replay</button>
+      </header>
+
+      <div class="panels">
+        <section id="panel-animation" class="panel active" aria-label="Happy birthday animation">
+          <section class="stage" aria-label="Happy birthday animation">
+            <div class="bg" aria-hidden="true"></div>
+            <div class="sparkles" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="floor" aria-hidden="true"></div>
+
+            <div class="eggs" aria-hidden="true">
+              <div class="egg egg1">
+                <div class="egg-highlight"></div>
+                <div class="egg-cracks">
+                  <span class="cr c1"></span>
+                  <span class="cr c2"></span>
+                  <span class="cr c3"></span>
+                  <span class="cr c4"></span>
+                </div>
+                <div class="egg-shards">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span>
+                </div>
+              </div>
+
+              <div class="egg egg2">
+                <div class="egg-highlight"></div>
+                <div class="egg-cracks">
+                  <span class="cr c1"></span>
+                  <span class="cr c2"></span>
+                  <span class="cr c3"></span>
+                  <span class="cr c4"></span>
+                </div>
+                <div class="egg-shards">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span>
+                </div>
+              </div>
+
+              <div class="egg egg3">
+                <div class="egg-highlight"></div>
+                <div class="egg-cracks">
+                  <span class="cr c1"></span>
+                  <span class="cr c2"></span>
+                  <span class="cr c3"></span>
+                  <span class="cr c4"></span>
+                </div>
+                <div class="egg-shards">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="shock" aria-hidden="true">
+              <div class="shockwave"></div>
+              <div class="dust"></div>
+            </div>
+
+            <div class="pop" aria-label="Birthday surprise">
+              <div class="ring" aria-hidden="true"></div>
+
+              <div class="cavid-egg">
+                <div class="shell-mask" aria-hidden="true"></div>
+                <img id="cavidImg" class="cavid-img" src="/Cavid.jpeg" alt="Birthday portrait" />
+              </div>
+
+              <div class="copy" aria-live="polite">
+                <div class="headline">
+                  <span class="t1" aria-hidden="true">Happy</span>
+                  <span class="t2" aria-hidden="true">Birthday</span>
+                  <span class="t3" id="nameText">Friend</span>
+                </div>
+                <p class="sub" id="subText">
+                  Today is your day—celebrate big, smile wider, and enjoy every moment.
+                </p>
+                <div class="wishes" aria-label="Birthday wishes">
+                  <p class="wishLine w1">May your year be filled with peace, laughter, and real wins.</p>
+                  <p class="wishLine w2">May your dreams get closer every day, even the hard ones.</p>
+                  <p class="wishLine w3">Stay healthy, stay strong, and keep your heart light.</p>
+                  <p class="wishLine w4">Good people, good news, and good vibes—always around you.</p>
+                  <p class="wishLine w5">Every new day brings a chance to grow, explore, and shine.</p>
+                  <p class="wishLine w6">Happy Birthday again—this moment is only for you.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="confetti" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </section>
+        </section>
+
+        <section id="panel-wishes" class="panel" aria-label="Birthday wishes">
+          <div class="panelInner">
+            <h2 class="panelTitle">
+              Happy Birthday, <span id="nameTextBig">Friend</span>!
+            </h2>
+            <p class="panelLead">
+              Today isn’t just a date on the calendar. It’s proof that you keep showing up, keep growing, and keep making life brighter for people around you.
+            </p>
+
+            <div class="cards">
+              <article class="card">
+                <h3>3 Wishes (simple + powerful)</h3>
+                <ul class="miniList">
+                  <li>More calm days.</li>
+                  <li>More big opportunities.</li>
+                  <li>More moments with people you love.</li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <h3>A little motivation</h3>
+                <p>
+                  If this year has challenges, let them sharpen you. If it has wins, let them lift you.
+                  Either way, you’re building a life you can be proud of.
+                </p>
+              </article>
+
+              <article class="card">
+                <h3>Toast time</h3>
+                <p>
+                  Cheers to you: the laughs, the patience, and the hard work behind your smile.
+                  May your next chapter be even better than the last.
+                </p>
+              </article>
+            </div>
+
+            <div class="longText">
+              <p>
+                On your birthday, I want you to feel something rare: appreciation without limits.
+                You deserve days that feel light, plans that feel clear, and people who show up for you the way you do for others.
+              </p>
+              <p>
+                Keep chasing what makes you curious. Keep protecting your peace.
+                And keep remembering: the best version of you is always on the way.
+              </p>
+              <p>
+                Happy Birthday again. I hope this year gives you the wins you’ve been earning—plus the small surprises you didn’t expect.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="panel-memories" class="panel" aria-label="Memories">
+          <div class="panelInner">
+            <h2 class="panelTitle">
+              Memories for <span id="nameTextMem">Friend</span>
+            </h2>
+
+            <div class="memoryHero">
+              <div class="avatarFrame" aria-hidden="true">
+                <img class="avatarImg" src="/Cavid.jpeg" alt="Birthday photo" />
+              </div>
+              <div class="memoryQuote">
+                <div class="quoteMark" aria-hidden="true">“</div>
+                <p class="quoteText">
+                  You’re not just getting older—you’re getting better.
+                  Every year you bring more energy, more stories, and more reasons to celebrate.
+                </p>
+                <div class="quoteMark right" aria-hidden="true">”</div>
+              </div>
+            </div>
+
+            <div class="timeline">
+              <div class="tItem">
+                <div class="dot" aria-hidden="true"></div>
+                <div class="tBody">
+                  <h3>Now</h3>
+                  <p>Today is yours. No pressure—just smiles and good vibes.</p>
+                </div>
+              </div>
+              <div class="tItem">
+                <div class="dot" aria-hidden="true"></div>
+                <div class="tBody">
+                  <h3>This year</h3>
+                  <p>More progress. More lessons. More “I can’t believe I did that.” moments.</p>
+                </div>
+              </div>
+              <div class="tItem">
+                <div class="dot" aria-hidden="true"></div>
+                <div class="tBody">
+                  <h3>Next year</h3>
+                  <p>We’ll celebrate what you became—because that’s the best birthday gift.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="longText">
+              <p>
+                I don’t know what the next chapters look like—but I know this:
+                you handle life with heart, and you deserve the good kind of surprises.
+              </p>
+              <p>
+                You’ve always had that thing that can’t be taught: the ability to stay positive even when it’s hard.
+                That’s why people trust you. That’s why people enjoy your presence.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="panel-surprise" class="panel" aria-label="Surprise section">
+          <div class="panelInner">
+            <h2 class="panelTitle">
+              Surprise mode for <span id="nameTextSurprise">Friend</span>
+            </h2>
+            <p class="panelLead">Pick your vibe. Your birthday message will switch instantly.</p>
+
+            <div class="vibeRow" role="group" aria-label="Pick a vibe">
+              <button class="vibeBtn" type="button" data-vibe="joy">Joy</button>
+              <button class="vibeBtn" type="button" data-vibe="focus">Focus</button>
+              <button class="vibeBtn" type="button" data-vibe="legend">Legend</button>
+            </div>
+
+            <div class="vibeCard" aria-live="polite">
+              <h3>Your vibe message</h3>
+              <p id="vibeText">Choose a vibe above to reveal your custom wish.</p>
+              <p class="vibeHint">Tip: click “Animation” if you want the egg clash again.</p>
+            </div>
+
+            <div class="funGrid">
+              <div class="funCell">
+                <h3>Birthday rule #1</h3>
+                <p>No rushing. Enjoy the moment like it’s your favorite song.</p>
+              </div>
+              <div class="funCell">
+                <h3>Birthday rule #2</h3>
+                <p>If someone makes you smile today, tell them “thank you.”</p>
+              </div>
+              <div class="funCell">
+                <h3>Birthday rule #3</h3>
+                <p>Keep your dreams loud. The right people will hear you.</p>
+              </div>
+            </div>
+
+            <div class="longText">
+              <p>Secret bonus: if you’re reading this, you’re officially part of the birthday energy.</p>
+              <p>Enjoy your day. You earned every good thing coming your way.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="foot">
+        <span class="hint">Click “Replay” to watch again.</span>
+      </footer>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
+
